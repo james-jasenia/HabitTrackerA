@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/goals"
+        android:title="@string/goal_name"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:icon="@drawable/nav_bar_goal_foreground" />
+
+    <item
+        android:id="@+id/timetable"
+        android:title="Timetable"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:icon="@drawable/nav_bar_timetable_foreground" />
+
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        android:icon="@drawable/nav_bar_settings_foreground" />
+
+</menu>
