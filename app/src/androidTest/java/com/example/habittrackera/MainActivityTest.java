@@ -8,12 +8,63 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.click;
+import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static org.junit.Assert.*;
 
 @RunWith(AndroidJUnit4ClassRunner.class)
 public class MainActivityTest {
 
     @Rule
-    ActivityScenarioRule<MainActivity> scenarioRule = new ActivityScenarioRule<MainActivity>(MainActivity.class);
+    public ActivityScenarioRule<MainActivity> scenarioRule = new ActivityScenarioRule<MainActivity>(MainActivity.class);
 
+    //Bottom Navigation View Visibility
+    @Test
+    public void test_bottomNavigationView_isVisible() {
+        onView(withId(R.id.bottomNavigationView)).check(matches(isDisplayed()));
+    }
+
+    //Button Visibility
+    @Test
+    public void test_goalButton_IsVisible() {
+        onView(withId(R.id.goals)).check(matches(isDisplayed()));
+    }
+
+    @Test
+    public void test_timetableButton_IsVisible() {
+        onView(withId(R.id.timetable)).check(matches(isDisplayed()));
+    }
+
+    @Test
+    public void test_settingsButton_IsVisible() {
+        onView(withId(R.id.settings)).check(matches(isDisplayed()));
+    }
+
+    // Default Fragment
+    @Test
+    public void test_goalsFragment_isFirstFragmentOnLaunch() {
+        onView(withId(R.id.goals_fragment)).check(matches(isDisplayed()));
+    }
+
+    // Navigation Menu onClick
+    @Test
+    public void test_goalsFragment_onClick_opensGoalsFragment() {
+        onView(withId(R.id.goals)).perform(click());
+        onView(withId(R.id.goals_fragment)).check(matches(isDisplayed()));
+    }
+
+    @Test
+    public void test_timetableFragment_onClick_opensTimetableFragment() {
+        onView(withId(R.id.timetable)).perform(click());
+        onView(withId(R.id.timetable_fragment)).check(matches(isDisplayed()));
+    }
+
+    @Test
+    public void test_settingsFragment_onClick_opensSettingsFragment() {
+        onView(withId(R.id.settings)).perform(click());
+        onView(withId(R.id.settings_fragment)).check(matches(isDisplayed()));
+    }
 }
