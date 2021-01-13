@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/goals">
 
+    <fragment
+        android:id="@+id/goals"
+        android:name="com.example.habittrackera.goalsFragments.CurrentGoalFragment"
+        android:label="fragment_current_goal"
+        tools:layout="@layout/fragment_current_goal" />
+    <fragment
+        android:id="@+id/timetable"
+        android:name="com.example.habittrackera.timetableFragments.TimetableFragment"
+        android:label="fragment_timetable"
+        tools:layout="@layout/fragment_timetable" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.habittrackera.settingsFragments.SettingsListFragment"
+        android:label="fragment_settings_list"
+        tools:layout="@layout/fragment_settings_list" />
 </navigation>
