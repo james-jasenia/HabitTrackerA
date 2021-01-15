@@ -12,7 +12,9 @@ import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.junit.Assert.*;
 
 @RunWith(AndroidJUnit4ClassRunner.class)
@@ -49,7 +51,7 @@ public class MainActivityTest {
         onView(withId(R.id.goals_fragment)).check(matches(isDisplayed()));
     }
 
-    // Navigation Menu onClick
+    // Navigation Menu Button onClick
     @Test
     public void test_goalsFragment_onClick_opensGoalsFragment() {
         onView(withId(R.id.goals)).perform(click());
