@@ -20,7 +20,7 @@ public class CurrentGoalFragmentTest {
     @Test
     public void test_currentGoalFragment_idDisplayed() {
         FragmentScenario<CurrentGoalFragment> scenario = FragmentScenario.launchInContainer(CurrentGoalFragment.class);
-        onView(withId(R.id.goals_fragment)).check(matches(isDisplayed()));
+        onView(withId(R.id.current_goals_fragment)).check(matches(isDisplayed()));
     }
 
     @Test
