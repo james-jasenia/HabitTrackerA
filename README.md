@@ -6,3 +6,4 @@
 
 ## UI Testing:
 - BottomNavigationMenu
+- Fragments
