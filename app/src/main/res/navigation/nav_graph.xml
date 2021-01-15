@@ -3,21 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/goals">
+    app:startDestination="@id/navigation_current_goals">
 
     <fragment
-        android:id="@+id/goals"
+        android:id="@+id/navigation_current_goals"
         android:name="com.example.habittrackera.goalsFragments.CurrentGoalFragment"
-        android:label="fragment_current_goal"
+        android:label="Current Goals"
         tools:layout="@layout/fragment_current_goal" />
     <fragment
-        android:id="@+id/timetable"
+        android:id="@+id/navigation_timetable"
         android:name="com.example.habittrackera.timetableFragments.TimetableFragment"
-        android:label="fragment_timetable"
+        android:label="Timetable"
         tools:layout="@layout/fragment_timetable" />
     <fragment
-        android:id="@+id/settings"
+        android:id="@+id/navigation_settings"
         android:name="com.example.habittrackera.settingsFragments.SettingsListFragment"
-        android:label="fragment_settings_list"
+        android:label="Settings"
         tools:layout="@layout/fragment_settings_list" />
 </navigation>

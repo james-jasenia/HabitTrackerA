@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/goals"
+        android:id="@+id/navigation_current_goals"
         android:title="@string/goal_name"
          android:orderInCategory="1"
         android:icon="@drawable/nav_bar_goal_foreground" />
 
     <item
-        android:id="@+id/timetable"
+        android:id="@+id/navigation_timetable"
         android:title="Timetable"
         android:orderInCategory="2"
         android:icon="@drawable/nav_bar_timetable_foreground" />
 
 
     <item
-        android:id="@+id/settings"
+        android:id="@+id/navigation_settings"
         android:title="Settings"
         android:orderInCategory="3"
         android:icon="@drawable/nav_bar_settings_foreground" />

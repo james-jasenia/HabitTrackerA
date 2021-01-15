@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".goalsFragments.CurrentGoalFragment"
-    android:id="@+id/goals_fragment">
+    android:id="@+id/current_goals_fragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
