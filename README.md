@@ -6,3 +6,9 @@
 
 ## UI Testing:
 - BottomNavigationMenu
+- Fragments
+
+
+## Learning:
+### Action Bar:
+- Updating the action bar using Navigation Components. In the nax_graph.xml file, each fragment has a label parameter. This label parameter is displayed in the title text view.
