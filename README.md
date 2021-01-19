@@ -20,21 +20,21 @@
 #### Coordinator Layout
 
 #### Constraint Layout
-Constraint Layout was designed to support developers to build apps that cater for different screen sizes and orientations.
+Constraint Layout was designed to support developers to build apps that cater for different screen sizes and orientations. It follows the foundational priciples that UIKit employs to manage constraint based layout (Storyboard and NSLayoutConstraint). 
 
-constraintVertical_bias="0.20" - This means that the view is 20% distance from the top. Bias can be very hard to work with when the orientation changes. You get weird squishing behaviour. Having a scroll view as a parent makes rotation behaviour.
+<strong>General Rule:</strong> You should always use a scroll view as a parent and place the views within a Constraint Layout. Views hould be constrained to other views (app:layout_constraintBottom_toBottomOf="@+id/other_view"). <em>I am pretty sure views are layed out top to bottom, keep this in mind when referencing other views (they need to exist).</em> You can use margin properties to pad the views.
 
-General Rule: You should always use a scroll view as a parent and the place the constraint layout inside. Where possible constrain elements to other elements.
-<strong><em>I am pretty sure that the layout is top to bottom</em></strong> When you are using this system, you have no need for the bias.
+constraintVertical_bias="0.20" - This means that the view is 20% distance from the top. Bias can be very hard to work with when the orientation changes. You get weird squishing behaviour. 
 
-This is a very similar constraint based system as Apple's UIKit. 
+###### Linear Chains
+Linear Chains are used to layout views that are stacked verticall or horizontally. They are fantastic when you have a variety of fields on a form. There are a variety attributes that you can use to modify the behaviour of a chain:
 
-Control Linear Groups with a chain - Situation where you need to put elements next to each other (think of the a fields for a form).
-Attributes of a chain:
 - Spread: The views are evenly distributed
 - Spread inside: The first and last view are constrained to a specific location, the rest are distributed evenly between.
 - Weighted: Different views have difference weightings.
 - Packed: You might have groups of views that are next to each other.
+
+FillViewPort - You may need to look up what this means. It will spread the entire 
 
 
 #### Linear Layout
