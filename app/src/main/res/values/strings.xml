@@ -3,4 +3,6 @@
     <string name="goal_name">Goal</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sub_goals">Sub Goals:</string>
+    <string name="enter_goal">Enter Goal</string>
 </resources>

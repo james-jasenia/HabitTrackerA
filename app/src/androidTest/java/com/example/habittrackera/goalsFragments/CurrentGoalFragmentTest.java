@@ -28,4 +28,8 @@ public class CurrentGoalFragmentTest {
         FragmentScenario<CurrentGoalFragment> scenario = FragmentScenario.launchInContainer(CurrentGoalFragment.class);
         onView(withId(R.id.current_goals_recyclerView)).check(matches(isDisplayed()));
     }
+
+
+    //TODO: public void test_floatingActionBar_isDisplayed() {}
+    //TODO: public void test_floatingActionBar_onClick_newGoalFragment_isDisplayed() {}
 }
